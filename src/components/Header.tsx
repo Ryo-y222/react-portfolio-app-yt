@@ -58,9 +58,6 @@ const Header: React.FC = () => {
                         { setNavLinks.map( (navLInk) => (
                         <ListItem disablePadding>
                             <ListItemButton sx={{ textAlign: 'center', display: {xs: 'none', md: 'block'}}} component={Link} to={navLInk.url}>
-                        { setNavLinks.map( (navLInk) => (
-                        <ListItem disablePadding>
-                            <ListItemButton sx={{ textAlign: 'center'}} component={Link} to={navLInk.url}>
                               <ListItemText primary={navLInk.text} />
                             </ListItemButton>
                         </ListItem>
