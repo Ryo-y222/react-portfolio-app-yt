@@ -20,7 +20,7 @@ const Top: React.FC = () => {
                 </Grid>
                 <Grid item xs={12} md={12} component="div">
                   <Typography component="h2" variant="h2">
-                    テキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキスト
                   </Typography>
                 </Grid>
 
