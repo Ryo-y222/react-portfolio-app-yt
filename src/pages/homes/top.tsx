@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 
 import MV from '../../assets/images/1920x1080.png'
+import SkillList from "../../components/SkillLIst";
 
 const Top: React.FC = () => {
     return (
@@ -33,27 +34,9 @@ const Top: React.FC = () => {
           <Box>
             <Container maxWidth='md'>
               <Grid container rowSpacing={0} columnSpacing={2} >
-                <Grid item xs={12} md={12} sx={{ textAlign: 'center'}}>
-                  <Typography component="h2" variant="h2">
-                    Skill
-                  </Typography>
-                </Grid>
-                <Grid item xs={12} md={4} component="div">
-                  <Box sx={{ height: 200, backgroundColor: 'red'}}></Box>
-                </Grid>
-                <Grid item xs={12} md={4} component="div">
-                  <Box sx={{ height: 200, backgroundColor: 'red'}}></Box>
-                </Grid>
-                <Grid item xs={12} md={4} component="div">
-                  <Box sx={{ height: 200, backgroundColor: 'red'}}></Box>
-                </Grid>
-                <Grid item xs={12} md={12} sx={{ textAlign: 'center'}} >
-                  <Button variant="contained" size="large">
-                    LearnMore
-                  </Button>
-                </Grid>
-
+                <SkillList />
               </Grid>
+
             </Container>
           </Box>
           <Box>
