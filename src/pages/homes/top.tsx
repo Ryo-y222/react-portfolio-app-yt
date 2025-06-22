@@ -9,6 +9,7 @@ import MV from '../../assets/images/1920x1080.png'
 import SkillList from "../../components/SkillLIst";
 import ProductionList from "../../components/ProductionList";
 import ProfileList from "../../components/ProfileList";
+import ContactForm from "../../components/ContactForm";
 
 const Top: React.FC = () => {
     return (
@@ -55,16 +56,7 @@ const Top: React.FC = () => {
 
           <Box>
             <Container maxWidth='md'>
-              <Grid container rowSpacing={2} columnSpacing={2} >
-                <Grid item xs={12} md={12} sx={{ textAlign: 'center'}}>
-                  <Typography component="h2" variant="h2">
-                    Contact
-                  </Typography>
-                </Grid>
-                <Grid item xs={12} md={12} component="div">
-                  <Box sx={{ height: 400, backgroundColor: 'red'}}></Box>
-                </Grid>
-              </Grid>
+              <ContactForm />
             </Container>
           </Box>
         </>
