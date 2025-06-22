@@ -70,7 +70,8 @@ const SkillList: React.FC = () => {
     }
     
     return(
-        <>             
+        <> 
+         <Grid container rowSpacing={2} columnSpacing={2} >          
             <Grid item xs={12} md={12} sx={{ textAlign: 'center'}}>
               <Typography component="h2" variant="h2">
                 Skill
@@ -93,6 +94,7 @@ const SkillList: React.FC = () => {
                 LearnMore
             </Button>
             </Grid>
+          </Grid>  
         </>
     )
 }
