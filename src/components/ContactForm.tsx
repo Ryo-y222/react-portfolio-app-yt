@@ -6,6 +6,8 @@ import Button from "@mui/material/Button";
 import { Stack } from "@mui/material";
 import TextField from "@mui/material/TextField";
 import CircularProgress from "@mui/material/CircularProgress";
+import axios from 'axios'
+
 
 const ContactForm: React.FC = () => {
 
@@ -14,7 +16,8 @@ const ContactForm: React.FC = () => {
     const [emailSent, setEmailSent] = useState(false);
     const [isSending, setIsSending] = useState(false);
 
-    const sleep = (waitTime: number) => new Promise( resolve => setTimeout(resolve, waitTime));
+
+    // const sleep = (waitTime: number) => new Promise( resolve => setTimeout(resolve, waitTime));
 
     const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setEmail(event.target.value);
@@ -28,7 +31,12 @@ const ContactForm: React.FC = () => {
         try {
             setIsSending(true);
             //送信する処理
-            await sleep(5000);
+            // await sleep(5000);
+            await axios.post('htttp:localhost:3000/send-mail',{
+                email: email,
+                message: message,
+            })
+
             console.log("メールが送信されました。");
 
             //メール送信が終わった後
