@@ -5,7 +5,6 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import MediaCard from "./MediaCard";
 
-import MV from '../../assets/images/1920x1080.png'
 // import SkillList from "../../components/SkillLIst";
 
 const ProductionList: React.FC = () => {
